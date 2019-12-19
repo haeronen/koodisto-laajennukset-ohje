@@ -8,7 +8,7 @@
 
 # 10. Koodistojen laajennukset 
 
-Koodistot-työkalu tarjoaa mekanismin, jonka avulla koodistojen ylläpitäjät voivat kontrolloidusti laajentaa koodiston tietosisältöä erilaisia tarpeita varten. Koodistot-työkalu tarjoaa tällähetkellä vajaat kymmenkunta laajennuskokonaisuutta käytettäväksi ja uusia on mahdollista toteuttaa työkaluun tarpeen mukaan. Mikäli Koodistot-työkalun tarjoamat ominaisuudet eivät sellaisenaan riitä käyttötapaukseesi, saattaa uusi laajennuskokonaisuus olla ratkaisu ongelmaan. Otathan tällöin yhteyttä: yhteentoimivuus@vrk.fi
+Koodistot-työkalu tarjoaa mekanismin, jonka avulla koodistojen ylläpitäjät voivat kontrolloidusti laajentaa koodiston tietosisältöä erilaisia tarpeita varten. Koodistot-työkalu tarjoaa tällä hetkellä vajaat kymmenkunta laajennuskokonaisuutta käytettäväksi ja uusia on mahdollista toteuttaa työkaluun tarpeen mukaan. Mikäli Koodistot-työkalun tarjoamat ominaisuudet eivät sellaisenaan riitä käyttötapaukseesi, saattaa uusi laajennuskokonaisuus olla ratkaisu ongelmaan. Otathan tällöin yhteyttä: yhteentoimivuus@vrk.fi
 
 <br/>
 
@@ -16,7 +16,7 @@ Koodistot-työkalun laajennusmekanismin keskeiset osat ovat *laajennustyyppi*, *
 
 **Laajennustyyppi:**
 - Laajennustyyppi määrittelee koodistoon liitettävissä olevat lisäominaisuudet sekä niiden semantiikan.
-- Koodistot-työkalu tarjoaa tällähetkellä vajaat kymmenkunta erilaista laajennustyyppiä käytettäväksi, kukin näistä liittää omanlaisiaan näkymiä ja/tai tietokenttiä osaksi koodistoa.
+- Koodistot-työkalu tarjoaa tällä hetkellä vajaat kymmenkunta erilaista laajennustyyppiä käytettäväksi, kukin näistä liittää omanlaisiaan näkymiä ja/tai tietokenttiä osaksi koodistoa.
 - Tuetut laajennustyypit on kuvattu tarkemmin kohdassa *Tuetut laajennustyypit*.
 
   
@@ -27,22 +27,22 @@ Koodistot-työkalun laajennusmekanismin keskeiset osat ovat *laajennustyyppi*, *
   
 **Jäsen:**
 - Laajennuksen varsinainen sisältö koostuu jäsenistä.
-- Jäsen sisältää laajennustyypin määrittelemät lisätietokentät sekä viitteet koodin ja toisiin jäseniin.
+- Jäsen sisältää laajennustyypin määrittelemät lisätietokentät sekä viittaukset koodeihin.
 
 <br/>
 
-Koodistot-työkalu tarjoamat laajennustyypit ovat jaoteltavissa keskeisten ominaisuuksiensa puolesta kahteen kategoriaan: *hierarkialaajennuksiin* ja *koodilaajennuksiin*. Hierarkialaajennusten avulla voidaan muodostaa hierarkisia koosteita koodeista. Koodilaajennusten avulla puolestaan voidaan listätä koodeihin uusia tietokenttiä. 
+Koodistot-työkalun tarjoamat laajennustyypit ovat jaoteltavissa keskeisten ominaisuuksiensa puolesta kahteen kategoriaan: *hierarkialaajennuksiin* ja *koodilaajennuksiin*. Hierarkialaajennusten avulla voidaan muodostaa hierarkisia koosteita koodeista. Koodilaajennusten avulla puolestaan voidaan listätä koodeihin uusia tietokenttiä. 
 
 
 **Hierarkialaajennus tyyppiset laajennustyyppit:**
 - Mahdollistavat hierarkisten rakenteiden koostamisen koodeista.
-- Liittävät hierarkian jäseniin ennaltamääriteltyjä tietokenttiä, esimerkiksi nimi tai vastaavia tarkenteita.
+- Liittävät hierarkian jäseniin ennalta määriteltyjä tietokenttiä, esimerkiksi nimi tai vastaavia tarkenteita.
 - Ovat varsin yleiskäyttöisiä ja niitä voidaan käyttää laajasti erilaisissa käyttötapauksissa jäsentämään olemassa olevia koodeja.
 - Eivät aseta rajotteita samaa laajennustyyppiä olevien laajennusten määrälle per koodisto.
 
 
 **Koodilaajennus tyyppiset laajennustyypit:**
-- Laajentavat koodia ennaltamäärätyillä tietokentillä.
+- Laajentavat koodia ennalta määrätyillä tietokentillä.
 - Ovat tyypillisesti räätälöity tietyyn käyttötarkoitukseen ja rajaavat kenttien sallittuja arvoja.
 - Rajoittavat että tiettyä laajennustyyppiä olevia laajennuksia voi olla enintään yksi per koodisto. 
 
@@ -53,9 +53,9 @@ Koodistot-työkalu tarjoamat laajennustyypit ovat jaoteltavissa keskeisten omina
 | Laajennustyyppi     | Arkkityyppi        | Kuvaus                                                       |
 | ------------------- | ------------------ | ------------------------------------------------------------ |
 | Määrityshierarkia   | Hierarkialaajennus | Mahdollistaa vaihtoehtoisen hierarkian muodostamisen koodeista. Hierarkiaan voidaan sisällyttää koodeja yhdestä tai useammasta koodistosta ja kustakin koodistosta voidaan ottaa joko kaikki tai osajoukko koodeista mukaan. Kullekin hierarkian jäsenelle voidaan antaa tarkentava nimi kuvaamaan jäsenen roolia hierarkiassa. |
-| Laskentahierarkia   | Hierarkialaajennus | Perusominaisuuksiltaan vastaava kuin Määrityshierarkia -laajennus, mutta tukee lisäksi summaus ja vertailu operaattorin määrittämistä kullekkin hierarkian jäsenelle. |
+| Laskentahierarkia   | Hierarkialaajennus | Perusominaisuuksiltaan vastaava kuin Määrityshierarkia -laajennus, mutta tukee lisäksi summaus- ja vertailuoperaattorien määrittämistä kullekin hierarkian jäsenelle. |
 | Koodiliitos         | Hierarkialaajennus | Mahdollistaa yksisuuntaisen linkityksen muodostamisen koodien välille. Linkitettävät koodit voivat olla yhdestä tai useammasta koodistosta. |
-| DPM Metric          | Koodilaajennus     | Lisää koodin tietosisältöön Data Point Modeling -metodologian mukaisen Metric käsitteen vaatimat kentät. Mahdollistaa näin DPM Metric käsitteiden esittäämisen Koodistot-työkalun koodeina. |
+| DPM Metric          | Koodilaajennus     | Lisää koodin tietosisältöön Data Point Modeling -metodologian mukaisen Metric käsitteen vaatimat kentät. Mahdollistaa näin DPM Metric käsitteiden esittämisen Koodistot-työkalun koodeina. |
 | DPM Explicit Domain | Koodilaajennus     | Ominaisuuksiltaan vastaava kuin DPM Metric -laajennus, mutta sisältäen DPM Explicit Domain käsitteen kentät. |
 | DPM Typed Domain    | Koodilaajennus     | Ominaisuuksiltaan vastaava kuin DPM Metric -laajennus, mutta sisältäen DPM Typed Domain käsitteen kentät. |
 | DPM Dimension       | Koodilaajennus     | Ominaisuuksiltaan vastaava kuin DPM Metric -laajennus, mutta sisältäen DPM Dimension käsitteen kentät. |
@@ -67,9 +67,9 @@ Koodistot-työkalu tarjoamat laajennustyypit ovat jaoteltavissa keskeisten omina
 
 Kuhunkin koodistoon voi joustavasti luoda vain tarvittavat laajennukset. Laajennukset voi luoda jollain seuraavista tavoista:
 
--  Tuodaan koko koodiston sisältö Koodistot-työkaluun Excel-muodossa, siten että Excel tiedosto sisältää koodiston perustietojen ja koodien lisäksi halutut laajennukset ja niiden jäsenet. Koodiston tuonti Excel muodossa on kuvattuna *Uuden koodiston lisääminen > Koodiston tuonti Excelistä*. Laajennuksien käyttämät Excel sarakeet ja välilehdet on puolestaan kuvattu kohdassa *Laajennuksiin liittyvät Excel elementit*.
+-  Tuodaan koko koodiston sisältö Koodistot-työkaluun Excel-muodossa, siten että Excel-tiedosto sisältää koodiston perustietojen ja koodien lisäksi halutut laajennukset ja niiden jäsenet. Koodiston tuonti Excel-muodossa on kuvattuna *Uuden koodiston lisääminen > Koodiston tuonti Excelistä*. Laajennuksien käyttämät Excel-sarakeet ja -välilehdet on puolestaan kuvattu kohdassa *Laajennuksiin liittyvät Excel-elementit*.
 -  Luodaan jo olemassa olevaan koodistoon halutut laajennukset sekä niiden jäsenet. Laajennukset voidaan luoda vaihtoehtoisesti: 
-   - Tuomalla halutut laajennukset sekä niiden tiedot Excel-muodossa Koodistot-työkalun. Pelkkien laajennusten tuonti käyttää samoja, kohdassa *Laajennuksiin liittyvät Excel elementit*, kuvattuja rakenteita kuin koko koodiston tuonti.  
+   - Tuomalla halutut laajennukset sekä niiden tiedot Excel-muodossa Koodistot-työkalun. Pelkkien laajennusten tuonti käyttää samoja, kohdassa *Laajennuksiin liittyvät Excel-elementit*, kuvattuja rakenteita kuin koko koodiston tuonti.  
    - Luomalla laajennukset Koodistot-työkalun käyttöliittymän kautta ja syöttämällä tarvittavat tiedot tarjottuja lomakkeita käyttäen. Laajennuksen luonti käyttöliittymän kautta on kuvattua kohdassa *Laajennuksen luominen koodiston tietokortin kautta*. Laajennuksen jäsenten luonti on puolestaan kuvattua kohdassa *Jäsenet*.  
 
 
@@ -87,14 +87,14 @@ Toimintovalikkossa on seuraavat laajennuksien luomiseen liittyvät toiminnot. Os
 
 | Toiminto                | Selite                                                    |
 | ----------------------- | --------------------------------------------------------- |
-| Luo Laskentahierarkia   | Lisää koodistoon Laskentahierarkia-tyyppisen laajennuksen |
-| Luo määrityshierarkia   | Lisää koodistoon Määrityshierarkia-tyyppisen laajennuksen |
-| Luo koodiliitos         | Lisää koodistoon Koodiliitos-tyyppisen laajennuksen       |
+| Luo laskentahierarkia   | Lisää koodistoon laskentahierarkia-tyyppisen laajennuksen |
+| Luo määrityshierarkia   | Lisää koodistoon määrityshierarkia-tyyppisen laajennuksen |
+| Luo koodiliitos         | Lisää koodistoon koodiliitos-tyyppisen laajennuksen       |
 | Luo DPM metric          | Lisää koodistoon DPM Metric laajennuksen                  |
 | Luo DPM explicit domain | Lisää koodistoon DPM Explicit Domain laajennuksen         |
 | Luo DPM dimension       | Lisää koodistoon DPM Dimension laajennuksen               |
 | Luo DPM typed domain    | Lisää koodistoon DPM Typed Domain laajennuksen            |
-| Tuo laajennuksia        | Lisää koodistoon laajennuksia Excel muodosta tuomalla     |
+| Tuo laajennuksia        | Lisää koodistoon laajennuksia Excel-muodosta tuomalla     |
 
 
 <br/>
@@ -121,19 +121,19 @@ Koodistoon kuuluvat laajennukset listataan Koodiston tietokortin Laajennukset v�
 
 ### 10.2.3 Laajennuksen sisältö
 
-Tietyn laajennuksen sisältöä voidaan tarkastella laajennuksen tietokorttin kautta. Laajennuksen tietokortilla on laajennuksen tyypistä riippuen 1-3 välilehteä: Koodiliitos, Jäsenet ja Tiedot. Näistä Tiedot välilehti löytyy kaikilta laajennuksilta, Koodiliitos välilehti vain koodiliitos tyyppisiltä laajennuksilta ja Jäsenet välilehti kaikilta hierarkialaajennus -kategoriaan kuuluvilta laajennuksilta.
+Tietyn laajennuksen sisältöä voidaan tarkastella laajennuksen tietokorttin kautta. Laajennuksen tietokortilla on laajennuksen tyypistä riippuen 1-3 välilehteä: Koodiliitos, Jäsenet ja Tiedot. Näistä Tiedot-välilehti löytyy kaikilta laajennuksilta, Koodiliitos välilehti vain koodiliitos tyyppisiltä laajennuksilta ja Jäsenet välilehti kaikilta hierarkialaajennus -kategoriaan kuuluvilta laajennuksilta.
 
 ![](images/laajennus-tietokortti-valilehdet.png)
 
 <br/>
 
-Laajennuksen tietokortin toimintovalikkossa on seuraavat toiminnot. Käytettävisä ole olevat toiminnot riippuvat laajennuksen tyypistä.
+Laajennuksen tietokortin toimintovalikkossa on seuraavat toiminnot. Käytettävissä ole olevat toiminnot riippuvat laajennuksen tyypistä.
 
 | Toiminto                             | Selite                                                       |
 | ------------------------------------ | ------------------------------------------------------------ |
 | Luo jäsen                            | Lisää laajennukseen uuden jäsenen. Jäsenen tiedot kysytään avautuvassa tietokortissa. |
 | Luo laajennukselle puuttuvat jäsenet | Automaatinen toiminto laajennuksen jäsenien luomiseen. Lisää laajennukseen jäseniä, niin että kaikkia laajennukseen liitettyjen koodistojen koodeja vastaa laajennuksessa jäsen. Luotavien jäsenten tietoja ei kysytä. |
-| Tuo jäseniä                          | Lisää laajennukseen uusia jäseniä Excel muodosta tuomalla.   |
+| Tuo jäseniä                          | Lisää laajennukseen uusia jäseniä Excel-muodosta tuomalla.   |
 | Poista laajennus                     | Poistaa laajennuksen ja sen jäsenet.                         |
 
 
@@ -155,7 +155,7 @@ Laajennuksen Tiedot-väliehdellä esitetään seuraavat tiedot.
 | Laajennuksen tunnus | Laajennuksen tunniste. Tunnus on yksilöivä koodiston sisällä. |
 | Laajennuksen nimi   | Nimi, jolla laajennus näytetään listoissa ja hakutuloksissa. |
 | Laajennustyyppi     | Määrittää minkä tyyppinen laajennus on kyseessä. Tuetut laajennustyypit on kuvattu kohdassa *Tuetut laajennustyyppit* |
-| Ulkoiset koodistot  | Lista muista koodistoistoista, johin tämän laajennuksen jäsenet voivat viitata. |
+| Ulkoiset koodistot  | Lista muista koodistoista, joihin tämän laajennuksen jäsenet voivat viitata. |
 | Tila                | Laajennuksen tilakoodi.                                      |
 | URI                 | Laajennuksen pysyvä tunniste.                                |
 | Viimeisin muokkaus  | Viimeisimmän muokkauksen ajanhetki.                          |
@@ -184,7 +184,7 @@ Koodiliitos tyyppisille laajennuksille esitetään erityinen Koodiliitos välile
 ## 10.3 Jäsenet
 
 Laajennuksen varsinainen sisältö koostuu jäsenistä. Jäseniä voidaan luoda olemassa olevaan laajennukseen seuraavilla tavoilla:
-- Tuomalla laajennuksen jäseniä Excel-muodossa Koodistot-työkalun. Jäsenten tuonti käyttää kohdassa *Laajennuksiin liittyvät Excel elementit* kuvattuja rakenteita.  
+- Tuomalla laajennuksen jäseniä Excel-muodossa Koodistot-työkalun. Jäsenten tuonti käyttää kohdassa *Laajennuksiin liittyvät Excel-elementit* kuvattuja rakenteita.  
 - Luomalla jäseniä Koodistot-työkalun käyttöliittymän kautta. Mekanismi jolla jäseniä luodaan, riippuu laajennuksen tyypistä:  
   - Hierarkialaajennusten jäsenten hallinta tapahtuu laajennuksen kautta. Näiden jäsenten luonti on kuvattua kohdassa *Hierarkialaajennuksen jäsenen luonti*. 
   - Koodilaajennusten jäsenten hallinta on yhdistetty koodien hallintaan. Koodilaajennusten jäsenten hallintaja on kuvattu kohdassa *Koodilaajennuksen jäsenien hallinta*.
@@ -205,7 +205,7 @@ Toimintovalikkossa on seuraavat jäsenen luomiseen liittyvät toiminnot.
 | Toiminto    | Selite                                           |
 | ----------- | ------------------------------------------------ |
 | Luo jäsen   | Lisää laajennukseen uuden jäsenen                |
-| Tuo jäseniä | Lisää koodistoon jäseniä Excel muodosta tuomalla |
+| Tuo jäseniä | Lisää koodistoon jäseniä Excel-muodosta tuomalla |
 
 <br/>
 
@@ -218,7 +218,7 @@ Kun valitaan uuden jäsenen luominen, avautuu laajennustyypin mukainen syöttöl
 
 ### 10.3.2 Koodilaajennuksen jäsenien hallinta
 
-Koodilaajennukset laajentavat koodin tietosisältöä ennaltamääritellyillä tietokentillä. Koodilaajennusten  tietokenttien syöttö ja käsittely Koodistot-työkalun käyttöliittymässä tapahtuu koodin tietokortin kautta. Taustalla Koodistot-työkalu hallinnoi koodilaajennusten jäseniä automaattisesti. Kun koodin tietokortissa syötetään tietoa koodilaajennuksen tietokenttiin, järjestelmä luo automaattisesti koodia vastaavan jäsenen laajennukseen ja tallettaa arvot tähän jäseneen. 
+Koodilaajennukset laajentavat koodin tietosisältöä ennalta määritellyillä tietokentillä. Koodilaajennusten  tietokenttien syöttö ja käsittely Koodistot-työkalun käyttöliittymässä tapahtuu koodin tietokortin kautta. Taustalla Koodistot-työkalu hallinnoi koodilaajennusten jäseniä automaattisesti. Kun koodin tietokortissa syötetään tietoa koodilaajennuksen tietokenttiin, järjestelmä luo automaattisesti koodia vastaavan jäsenen laajennukseen ja tallettaa arvot tähän jäseneen. 
 
 Ohessa esimerkkinä koodin syöttölomake DPM Metric tyyppisellä laajennuksella. Osa syötttölomakkeen sisällöstä on leikattu pois.
 
@@ -246,12 +246,13 @@ Alla kuvatut jäsenen Tiedot-välilehden kentät ovat yleisiä, eli ne ovat käy
 | Koodi              | Koodi, jonka tietoja jäsen laajentaa.                        |
 | Voimassaolo        | Jäsenen alku ja loppupäivämäärä.                             |
 | URI                | Jäsenen pysyvä tunniste.                                     |
+| Muokkaaja          | Kuka on muokannut jäsenen tietoja viimeksi.                  | 
 | Viimeisin muokkaus | Viimeisimmän muokkauksen ajanhetki.                          |
 
 
 <br/>
 
-## 10.4 Laajennuksiin liittyvät Excel elementit
+## 10.4 Laajennuksiin liittyvät Excel-elementit
 
 Laajennukset lisäävät Koodistot-työkalun käyttämään Excel-muotoon sarakkeita ja välilehtiä. Näiden sarakkeiden ja välilehtien avulla ilmaistaan laajennusten ja niiden jäsenten tiedot.
 
@@ -317,7 +318,7 @@ Laajennustyypin tiedot:
 
 Laajennustyypin lisäykset jäsenen tietokenttiin:
 
-| Nimi                  | Excel sarakkeen nimi | Huomiot                                                      |
+| Nimi                  | Excel-sarakkeen nimi | Huomiot                                                      |
 | --------------------- | -------------------- | ------------------------------------------------------------ |
 | Hierarkkinen yläjäsen | RELATION             | Määrityshierarkia -laajennustyyppi tarkentaa `RELATION` kentän semantiikkaa siten, että `RELATION` arvo on viittaus hierarkiseen yläjäseneen. |
 
@@ -338,13 +339,13 @@ Laajennustyypin tiedot:
 
 | Arkkityyppi        | Propertytype           | Kuvaus                                                       |
 | ------------------ | ---------------------- | ------------------------------------------------------------ |
-| Hierarkialaajennus | `calculationHierarchy` | Perusominaisuuksiltaan vastaava kuin Määrityshierarkia -laajennustyyppi, mutta tukee lisäksi matemaattisten summaus ja vertailu operaattorien määrittämistä kullekkin laajennuksen jäsenelle. |
+| Hierarkialaajennus | `calculationHierarchy` | Perusominaisuuksiltaan vastaava kuin Määrityshierarkia -laajennustyyppi, mutta tukee lisäksi matemaattisten summaus ja vertailu operaattorien määrittämistä kullekin laajennuksen jäsenelle. |
 
 <br/>
 
 Laajennustyypin lisäykset jäsenen tietokenttiin:
 
-| Nimi                      | Excel sarakkeen nimi | Huomiot                                                      |
+| Nimi                      | Excel-sarakkeen nimi | Huomiot                                                      |
 | ------------------------- | -------------------- | ------------------------------------------------------------ |
 | Hierarkkinen yläjäsen     | RELATION             | Laskentahierarkia -laajennustyyppi tarkentaa `RELATION` kentän semantiikkaa siten, että `RELATION` arvo on viittaus hierarkiseen yläjäseneen. |
 | Aritmeettinen operaattori | UNARYOPERATOR        | Sallitut arvot: `+` tai `-`                                  |
@@ -373,7 +374,7 @@ Laajennustyypin tiedot:
 
 Laajennustyypin lisäykset jäsenen tietokenttiin:
 
-| Nimi           | Excel sarakkeen nimi | Huomiot                                                      |
+| Nimi           | Excel-sarakkeen nimi | Huomiot                                                      |
 | -------------- | -------------------- | ------------------------------------------------------------ |
 | Liittyvä jäsen | RELATION             | Koodiliitos -laajennustyyppi tarkentaa `RELATION` kentän semantiikkaa siten, että `RELATION` arvo on viittaus koodiliitoksen toiseen osapuoleen. |
 
@@ -400,7 +401,7 @@ Laajennustyypin tiedot:
 
 Laajennustyypin lisäykset jäsenen tietokenttiin:
 
-| Nimi                | Excel sarakkeen nimi  | Huomiot                                                      |
+| Nimi                | Excel-sarakkeen nimi  | Huomiot                                                      |
 | ------------------- | --------------------- | ------------------------------------------------------------ |
 | Data type           | DPMMETRICDATATYPE     | Sallitut arvot: `Enumeration`, `Boolean`, `Date`, `Integer`, `Monetary`, `Percentage`, `String`, `Decimal`, `Lei` tai `Isin` |
 | Balance type        | DPMBALANCETYPE        | Sallitut arvot: `Credit` tai `Debit`                         |
@@ -431,7 +432,7 @@ Laajennustyypin tiedot:
 
 Laajennus lisää koodille seuraavat tietokentät:
 
-| Nimi                    | Excel sarakkeen nimi    | Huomiot                      |
+| Nimi                    | Excel-sarakkeen nimi    | Huomiot                      |
 | ----------------------- | ----------------------- | ---------------------------- |
 | Member XBRL code prefix | DPMMEMBERXBRLCODEPREFIX | Sallitut arvot: vapaa teksti |
 
@@ -458,7 +459,7 @@ Laajennustyypin tiedot:
 
 Laajennustyypin lisäykset jäsenen tietokenttiin:
 
-| Nimi      | Excel sarakkeen nimi | Huomiot                                                      |
+| Nimi      | Excel-sarakkeen nimi | Huomiot                                                      |
 | --------- | -------------------- | ------------------------------------------------------------ |
 | Data type | DPMDOMAINDATATYPE    | Sallitut arvot: `Boolean`, `Date`, `Integer`, `Monetary`, `Percentage`, `String`, `Decimal`, `Lei` tai `Isin` |
 
@@ -485,7 +486,7 @@ Laajennustyypin tiedot:
 
 Laajennustyypin lisäykset jäsenen tietokenttiin:
 
-| Nimi             | Excel sarakkeen nimi | Huomiot                      |
+| Nimi             | Excel-sarakkeen nimi | Huomiot                      |
 | ---------------- | -------------------- | ---------------------------- |
 | Domain reference | DPMDOMAINREFERENCE   | Sallitut arvot: vapaa teksti |
 
